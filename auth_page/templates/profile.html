@@ -1,0 +1,23 @@
+{% extends "auth_page.html" %}
+{% block form_content %}
+
+<p>Below you can modify your profile information</p>
+
+<form method="post" action="{% url profile %}">
+    {% csrf_token %}
+    <table>
+        <tr>
+            <th>Username:</th>
+            <td>{{ user }}</td>
+        </tr>
+        {{ form.as_table }}
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="save profile" />
+            </td>
+        </tr>
+    </table>
+    <input type="hidden" name="next" value="{{ next }}" />
+</form>
+{% endblock %}
