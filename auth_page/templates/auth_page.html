@@ -1,24 +1,17 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title></title>
-        <style type="text/css" rel="stylesheet">
-        .content {
-            overflow: hidden;
-            background-color: #EEEEEE;
-            padding: 20px;
-        }
-        </style>
-    </head>
-    <body>
-        <div class="content">
-            {{ errors }}
-            <form method="post" action=".">
-                {% csrf_token %}
-                {% block form_content %}
-                {% endblock %}
-                <input type="hidden" name="next" value="{{ next }}" />
-            </form>
-        </div>
-    </body>
-</html>
+{% extends "base_page.html" %}
+
+{% block css_extra %}
+<link rel="stylesheet" href="{{ STATIC_URL }}css/auth_page.css">
+{% endblock %}
+
+{% block main %}
+<div class="content">
+    {{ errors }}
+    <form method="post" action=".">
+        {% csrf_token %}
+        {% block form_content %}
+        {% endblock %}
+        <input type="hidden" name="next" value="{{ next }}" />
+    </form>
+</div>
+{% endblock %}

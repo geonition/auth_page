@@ -10,7 +10,8 @@ setup(
     include_package_data=True,
     package_data = {
         "auth_page": [
-            'templates/*'
+            'templates/*',
+            'static/css/*.css'
         ],
     },
     zip_safe=False,

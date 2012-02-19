@@ -1,14 +1,15 @@
 {% extends "auth_page.html" %}
+{% load i18n %}
 {% block form_content %}
 
-<form method="post" action="{% url  login %}">
+<form method="post" action="{% url login %}">
     {% csrf_token %}
     <table>
         {{ form.as_table }}
         <tr>
             <td></td>
             <td>
-                <input type="submit" value="login" />
+                <input type="submit" value="{% trans 'sign in' %}" />
             </td>
         </tr>
     </table>
@@ -16,7 +17,7 @@
 </form>
 <p>
     <a href="{% url retrieve_new_password %}">
-        Forgot your username or password?
+        {% trans "Forgot your username or password?" %}
     </a>
 </p>
 {% endblock %}

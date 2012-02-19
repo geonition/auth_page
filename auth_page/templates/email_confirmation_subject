@@ -1,1 +1,2 @@
-Confirm your email
+{% load i18n %}
+{% trans "Confirm your email" %}

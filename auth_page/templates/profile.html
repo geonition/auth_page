@@ -1,7 +1,8 @@
 {% extends "auth_page.html" %}
+{% load i18n %}
 {% block form_content %}
 
-<p>Below you can modify your profile information</p>
+<p>{% trans "Below you can modify your profile information" %}</p>
 
 <form method="post" action="{% url profile %}">
     {% csrf_token %}
