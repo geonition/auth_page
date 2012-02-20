@@ -22,19 +22,22 @@ from models import Email
 from random import random
 
 def login(request):
-    print "login"
-    print request
     return django_login_view(request, 'login.html')
 
 def register(request):
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
         if form.is_valid():
-            """
-            User.objects.create_user(form.cleaned_data['usernmae'],
-                                     password=form.cleaned_data['password'])
-            """
-            form.save()
+            User.objects.create_user(form.cleaned_data['username'],
+                                    '',
+                                    password=form.cleaned_data['password1'])
+            
+            #form.save()
+            
+            new_user = authenticate(username = request.POST.get('username'),
+                                    password = request.POST.get('password1'))
+            django_login(request, new_user)
+            
             return HttpResponseRedirect(request.POST.get('next', '/'))
         else:            
             next = request.GET.get('next', '/')
@@ -53,7 +56,7 @@ def register(request):
 
 def logout(request):
     django_logout(request)
-    return HttpResponseRedirect(request.POST.get('next', '/'))
+    return  HttpResponseRedirect(request.GET.get('next', '/'))
     
 
 def profile(request):
