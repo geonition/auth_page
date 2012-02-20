@@ -11,7 +11,9 @@ setup(
     package_data = {
         "auth_page": [
             'templates/*',
-            'static/css/*.css'
+            'static/css/*.css',
+            "locale/*/LC_MESSAGES/*.mo",
+            "locale/*/LC_MESSAGES/*.po"
         ],
     },
     zip_safe=False,
