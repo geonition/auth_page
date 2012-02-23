@@ -40,7 +40,7 @@ def register(request):
             
             return HttpResponseRedirect(request.POST.get('next', '/'))
         else:            
-            next = request.GET.get('next', '/')
+            next = request.POST.get('next', '/')
             return render_to_response('register.html',
                                       {'form': form,
                                         'next': next},
