@@ -1,4 +1,7 @@
-.content {
-    width: 50%;
-    margin: 0 auto;
+#map {
+    padding: 50px;
+}
+
+tr {
+    vertical-align: top;
 }
