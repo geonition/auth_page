@@ -3,14 +3,13 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-02-20 11:31+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2012-05-22 06:48-0500\n"
+"PO-Revision-Date: 2012-05-22 14:52+0200\n"
+"Last-Translator: Kristoffer Snabb <kristoffer.snabb@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: \n"
 "MIME-Version: 1.0\n"
@@ -19,65 +18,70 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
 #: templates/email_confirmation_message.txt:2
-#, python-format
-msgid ""
-"\n"
-"User '%(user)s' at %(site_name)s has given this as an email address.\n"
-"\n"
-"To confirm this is correct, go to %(activate_url)s\n"
-msgstr ""
+msgid "User"
+msgstr "Användare"
+
+#: templates/email_confirmation_message.txt:2
+msgid "at"
+msgstr "vid"
+
+#: templates/email_confirmation_message.txt:2
+msgid "has given this as an email address."
+msgstr "har gett sin email adress "
+
+#: templates/email_confirmation_message.txt:4
+msgid "To confirm this is correct, go to"
+msgstr "För att förstärka email adressen, gå till"
 
 #: templates/email_confirmation_subject.txt:2
-#, python-format
-msgid ""
-"\n"
-"Confirm email address for %(site_name)s\n"
-msgstr ""
+msgid "Confirm email address for"
+msgstr "Förstärk email adressen för"
 
 #: templates/email_confirmed.html:2
 msgid "Your email has been confirmed."
-msgstr ""
+msgstr "Din email adress har förstärkts"
 
 #: templates/login.html:12
 msgid "sign in"
-msgstr ""
+msgstr "logga in"
 
 #: templates/login.html:20
 msgid "Forgot your username or password?"
-msgstr ""
+msgstr "Har du glömt ditt användarnamn och lösenord?"
 
 #: templates/logout.html:6
 msgid "You have successfully logged out."
-msgstr ""
+msgstr "Du har nu loggat ut"
 
 #: templates/logout.html:8
 msgid "Return to previous page."
-msgstr ""
+msgstr "Gå tillbaka till föregående sida"
 
 #: templates/profile.html:5
 msgid "Below you can modify your profile information"
-msgstr ""
+msgstr "Undertil kan du ändra på din profil"
 
 #: templates/profile.html:11
 msgid "Username"
-msgstr ""
+msgstr "Användarnamn"
 
 #: templates/profile.html:18
 msgid "save profile"
-msgstr ""
+msgstr "Spara profilen"
 
-#: templates/register.html:11
+#: templates/register.html:12
 msgid "register"
-msgstr ""
+msgstr "Registrera dig"
 
 #: templates/retrieve_new_password.html:4
 msgid "Give your email to reset your password"
-msgstr ""
+msgstr "Ge din email adress för att få ett nytt lösenord"
 
 #: templates/retrieve_new_password.html:14
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: templates/retrieve_new_password.html:22
 msgid "send new password"
-msgstr ""
+msgstr "Skicka ett nytt lösenord"
+
