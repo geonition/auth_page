@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name='auth_page',
-    version='4.0.0',
+    version='4.0.1',
     author='Kristoffer Snabb',
     url='https://github.com/geonition/auth_page',
     packages=find_packages(),
@@ -17,6 +17,5 @@ setup(
         ],
     },
     zip_safe=False,
-    install_requires=['django',
-                      'django-social-auth']
+    install_requires=['django']
 )
