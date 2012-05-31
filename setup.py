@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name='auth_page',
-    version='4.0.3',
+    version='4.0.4',
     author='Kristoffer Snabb',
     url='https://github.com/geonition/auth_page',
     packages=find_packages(),
