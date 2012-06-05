@@ -3,85 +3,86 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-05-31 07:51-0500\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2012-06-05 10:31+0200\n"
+"Last-Translator: Kristoffer Snabb <kristoffer.snabb@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"X-Translated-Using: django-rosetta 0.6.6\n"
 
 #: templates/email_confirmation_message.txt:2
 msgid "User"
-msgstr ""
+msgstr "Utilizador"
 
 #: templates/email_confirmation_message.txt:2
 msgid "at"
-msgstr ""
+msgstr "em"
 
 #: templates/email_confirmation_message.txt:2
 msgid "has given this as an email address."
-msgstr ""
+msgstr "deu isto como um endereço de email"
 
 #: templates/email_confirmation_message.txt:4
 msgid "To confirm this is correct, go to"
-msgstr ""
+msgstr "Para confirmares que isto está correto, vai para"
 
 #: templates/email_confirmation_subject.txt:2
 msgid "Confirm email address for"
-msgstr ""
+msgstr "Confirma a morada de email para"
 
 #: templates/email_confirmed.html:2
 msgid "Your email has been confirmed."
-msgstr ""
+msgstr "O teu email foi confirmado."
 
 #: templates/login.html:12
 msgid "sign in"
-msgstr ""
+msgstr "entrar"
 
 #: templates/login.html:20
 msgid "Forgot your username or password?"
-msgstr ""
+msgstr "Esqueceste o teu nome de utilizador ou senha?"
 
 #: templates/logout.html:6
 msgid "You have successfully logged out."
-msgstr ""
+msgstr "Conseguiste desligar-te com sucesso."
 
 #: templates/logout.html:8
 msgid "Return to previous page."
-msgstr ""
+msgstr "Regressa à página anterior."
 
 #: templates/profile.html:5
 msgid "Below you can modify your profile information"
-msgstr ""
+msgstr "Em baixo podes modificar a tua informação de perfil"
 
 #: templates/profile.html:11
 msgid "Username"
-msgstr ""
+msgstr "Utilizador"
 
 #: templates/profile.html:18
 msgid "save profile"
-msgstr ""
+msgstr "gravar perfil"
 
 #: templates/register.html:12
 msgid "register"
-msgstr ""
+msgstr "registar"
 
 #: templates/retrieve_new_password.html:4
 msgid "Give your email to reset your password"
-msgstr ""
+msgstr "Dá o teu email para redefinires a tua senha"
 
 #: templates/retrieve_new_password.html:14
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: templates/retrieve_new_password.html:22
 msgid "send new password"
-msgstr ""
+msgstr "envio de nova senha"
+
