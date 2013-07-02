@@ -1,8 +1,9 @@
 {% extends "auth_page.html" %}
+{% load url from future %}
 {% load i18n %}
 {% block form_content %}
 
-<form method="post" action="{% url  login %}">
+<form method="post" action="{% url 'login' %}">
     {% csrf_token %}
     <table>
         {{ form.as_table }}

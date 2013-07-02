@@ -1,10 +1,11 @@
 {% extends "auth_page.html" %}
+{% load url from future %}
 {% load i18n %}
 {% block form_content %}
 
 <p>{% trans "Below you can modify your profile information" %}</p>
 
-<form method="post" action="{% url profile %}">
+<form method="post" action="{% url 'profile' %}">
     {% csrf_token %}
     <table>
         <tr>

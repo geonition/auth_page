@@ -16,7 +16,7 @@ from django.http import HttpResponseRedirect
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 from django.template.loader import render_to_string
-from django.utils.hashcompat import sha_constructor
+from hashlib import sha1 as sha_constructor
 from forms import ProfileForm
 from models import Email
 from random import random
